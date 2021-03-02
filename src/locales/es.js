@@ -4,6 +4,9 @@ export const HOME_SCREEN = {
     titleThirdBanner : 'Perfecto, Personalizado, Único.',
     buttonTitle : 'Comienza ahora',
     termsTitle: 'Al registrarte en Jipeek Aceptas los Términos y Condiciones junto a la Política de Privacidad.',
+    buttonSearchPlaceholder: 'Buscar en Jipeek',
+    buttonTitle01: 'Explorar setups',
+    buttonTitle02: 'Cupones Jipeek',
 };
 
 export const LOGIN = {

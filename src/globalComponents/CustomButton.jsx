@@ -3,12 +3,9 @@ import React from 'react';
 const CustomButton = (props) =>{
     console.log(props);
     return (
-        <div>
-            <button >
-                esto es el boton azul
-                {props.title}
-            </button>
-        </div>
+        <button className="bg-background02 rounded-md p-3 text-white">
+            <span>📢</span> {props.title}
+        </button>
     )
 }
 

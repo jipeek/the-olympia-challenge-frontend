@@ -5,6 +5,7 @@ const CustomButton = (props) =>{
     return (
         <div>
             <button >
+                esto es el boton azul
                 {props.title}
             </button>
         </div>

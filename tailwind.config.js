@@ -1,8 +1,11 @@
+const colors = require('tailwindcss/colors');
+
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
+      ...colors,
       primary: {
         light: '#246BFD',
         DEFAULT: '#246BFD',
@@ -22,6 +25,11 @@ module.exports = {
         light: '#bbbbbb',
         DEFAULT: '#262A34',
         dark: '#262A34'
+      },
+      background03: {
+        light: '#bbbbbb',
+        DEFAULT: '#5E6272',
+        dark: '#5E6272'
       },
       colorful01: {
         light: '#A06AF9',
@@ -63,6 +71,10 @@ module.exports = {
         DEFAULT: '#FFFFFF',
         dark: '#FFFFFF'
       },
+    },
+    fontFamily: {
+      sans: ['Inter', 'sans-serif'],
+      serif: ['Merriweather', 'serif'],
     },
     extend: {},
   },

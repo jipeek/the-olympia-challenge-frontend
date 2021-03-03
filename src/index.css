@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @layer base {
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+  body {
+    @apply bg-background01;
+    font-family: 'Inter', sans-serif;
+  }
   h1 {
     @apply text-2xl;
   }
@@ -17,11 +22,35 @@
   h6 {
     @apply text-primary;
   }
-  body {
-    @apply bg-background01;
-  }
   .btn {
     @apply py-2 px-4 font-semibold rounded-lg shadow-md;
+  }
+  .bg-gradient01 {
+    background: radial-gradient(102.94% 100% at 72.83% 100%, #FFB8E0 0%, #BE9EFF 38.89%, #88C0FC 67.4%, #86FF99 100%);
+  }
+  .bg-gradient02 {
+    background: linear-gradient(270deg, #C393FF 34.57%, #E42A6C 100%);
+  }
+  .bg-gradient03 {
+    background: linear-gradient(270deg, #FFEBA2 0%, #FF8669 100%);
+  }
+  .bg-gradient04 {
+    background: linear-gradient(180deg, #9ADB7F 0%, #6EA95C 100%);
+  }
+  .bg-gradient05 {
+    background: radial-gradient(87.65% 72.66% at 78.76% 27.34%, #FFF9B0 0%, #D3FFFA 46.43%, #FFC4FA 100%);
+  }
+  .bg-gradient06 {
+    background: linear-gradient(169.44deg, #FFAFAF -41.54%, #FFB07B -6.47%, #FFB37A -3.59%, #FFECB7 28.49%, #D6FFAA 63.43%, #0091FF 98.07%, #6236FF 133.2%, #B620E0 168.18%);
+  }
+  .bg-gradient07 {
+    background: linear-gradient(180deg, #BBFFE7 0%, #86FFCA 100%);
+  }
+  .bg-gradient08 {
+    background: linear-gradient(180deg, #FFB28E 0%, #FF7A55 100%);
+  }
+  .bg-gradient09 {
+    background: linear-gradient(90deg, #353843 0%, #181A20 100%);
   }
 }
 

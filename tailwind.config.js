@@ -96,6 +96,7 @@ module.exports = {
       },
       borderRadius: {
         'costum': '12px',
+        'double': '24px',
       },
       fontSize: {
         'superSmall': '10px',
@@ -103,6 +104,9 @@ module.exports = {
         'normal': '13px',
         'regular': '14px',
         'medium': '16px'
+      },
+      boxShadow: {
+        'regular': '0px 8px 16px rgba(0, 0, 0, 0.5)'
       }
     },
   },

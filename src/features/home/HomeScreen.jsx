@@ -17,9 +17,6 @@ import { CardProductFavoriteSmall } from '../../globalComponents/CardProductFavo
 import { ProductBanner } from '../../globalComponents/ProductBanner/ProductBanner';
 
 
-import CardProductHorizontal from '../../globalComponents/CardProductHorizontal/CardProductHorizontal';
-
-
 const HomeScreen= () =>{
     const strings = HOME_SCREEN_es;
     const { buttonSearchPlaceholder, buttonTitle01, buttonTitle02 } = strings;
@@ -44,7 +41,7 @@ const HomeScreen= () =>{
             </form>
                 <div className="h-40 w-full rounded-xl bg-gradient01 mb-6">
             </div>
-            <CardProductHorizontal img={img} alt="Texto alternativo" title="Protector de piel para escritorio" price="$49.900" footer="Envío gratis" />
+
                 <div className="mb-6 flex overflow-auto">
                     <div className="mr-6">
                         <CustomButton icon={dotone} title={buttonTitle01} />

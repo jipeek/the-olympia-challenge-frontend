@@ -1,3 +1,21 @@
 .bg-app {
   background: #181A20;
 }
+.section-products {
+  /* width: 100vw; */
+  height: 238px;
+  margin-bottom: 67px;
+  /* margin-left: -28px; */
+  /* margin-right: -14px; */
+}
+.more {
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* gap: 16px; */
+    row-gap: 16px;
+}
+
+.section-outstanding {
+  margin-bottom: 138px;
+}
+

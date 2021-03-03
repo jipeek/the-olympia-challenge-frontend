@@ -71,12 +71,28 @@ module.exports = {
         DEFAULT: '#FFFFFF',
         dark: '#FFFFFF'
       },
+      colorplaceholder: {
+        light: '#5E6272',
+        DEFAULT: '#5E6272',
+        dark: '#5E6272'
+      }
     },
     fontFamily: {
       sans: ['Inter', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
     },
-    extend: {},
+    extend: {
+      spacing: {
+        'regular': 'regular',
+        'medium': '16px',
+      },
+      borderRadius: {
+        'costum': '12px',
+      },
+      fontSize: {
+        'regular': '14px'
+      }
+    },
   },
   variants: {
     extend: {},

@@ -20,8 +20,6 @@ import InputSearch from '../../globalComponents/InputSearch/InputSearch';
 import img1 from "../../static/hdbeufb.svg";
 import ProductSummary from '../../globalComponents/ProductSummary/ProductSummary';
 
-import PurchaseDetails from '../../globalComponents/PurchaseDetails/PurchaseDetails';
-
 
 const HomeScreen= () =>{
     const strings = HOME_SCREEN_es;
@@ -52,12 +50,7 @@ const HomeScreen= () =>{
                         <CustomButton className="mr-6" icon={couponDiscount} title={buttonTitle02} />
                     </div>
                 </div>
-                <div className="p-4">
-                    <PurchaseDetails className="" subject="Subtotal productos" detail="$95.900" />
-                    <PurchaseDetails className="" subject="Envío" detail="Gratis" />
-                    <PurchaseDetails className="PurchaseDetails--descount" subject="Descuentos" detail="-$4500" />
-                    <PurchaseDetails className="PurchaseDetails--total" subject="Total del pedido" detail="$490.900" />
-                </div>
+
 
                 <div className="mb-4 items-center">
                     <span className="text-white text-lg font-bold font-heading">Últimos productos</span>

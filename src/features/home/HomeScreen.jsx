@@ -16,6 +16,7 @@ import { CardProductSquare } from '../../globalComponents/CardProductSquare/Card
 import { CardProductFavoriteSmall } from '../../globalComponents/CardProductFavoriteSmall/CardProductFavoriteSmall';
 import { ProductBanner } from '../../globalComponents/ProductBanner/ProductBanner';
 
+
 const HomeScreen= () =>{
     const strings = HOME_SCREEN_es;
     const { buttonSearchPlaceholder, buttonTitle01, buttonTitle02 } = strings;

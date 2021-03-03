@@ -7,6 +7,7 @@ import CustomButton from '../../globalComponents/CustomButton';
 import {HOME_SCREEN as HOME_SCREEN_es} from '../../locales/es';
 
 import img from "../../static/61mAKoAsBDL 1.svg";
+
 import search from "../../static/icons/Search.svg";
 import shoppingBag from "../../static/icons/ShoppingBag.svg";
 import dotone from "../../static/icons/Duotone.svg";
@@ -15,6 +16,10 @@ import { CardProductVertical } from '../../globalComponents/CardProductVertical/
 import { CardProductSquare } from '../../globalComponents/CardProductSquare/CardProductSquare';
 import { CardProductFavoriteSmall } from '../../globalComponents/CardProductFavoriteSmall/CardProductFavoriteSmall';
 import { ProductBanner } from '../../globalComponents/ProductBanner/ProductBanner';
+
+// imports de ProductSummary, esto no va en HomeScreen. Solo está puesto temporalmente
+import img1 from "../../static/hdbeufb.svg";
+import ProductSummary from '../../globalComponents/ProductSummary/ProductSummary';
 
 
 const HomeScreen= () =>{
@@ -93,6 +98,12 @@ const HomeScreen= () =>{
                     <CardProductVertical img={img} title="Protector de piel para escritorio" price="$49.900" footer="Envío gratis" />
                     <CardProductVertical img={img} title="Protector de piel para escritorio" price="$49.900" footer="Envío gratis" />
                 </div>
+            </div>
+
+            <div className="rounded-costum bg-background02 pt-4 pl-4 pr-2.5 pb-2.5">
+                <span className="text-base text-white mb-4.5">Resumen de productos</span>
+                <ProductSummary img={img1} alt="hola" title="Protector de piel para escritorio" und="1 unidad" price="$49.900"  />
+                <ProductSummary img={img1} alt="hola" title="Protector de piel para escritorio" und="1 unidad" price="$49.900"  />
             </div>
         </>
     )

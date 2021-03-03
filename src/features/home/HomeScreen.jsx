@@ -7,7 +7,6 @@ import CustomButton from '../../globalComponents/CustomButton';
 import {HOME_SCREEN as HOME_SCREEN_es} from '../../locales/es';
 
 import img from "../../static/61mAKoAsBDL 1.svg";
-import search from "../../static/icons/Search.svg";
 import shoppingBag from "../../static/icons/ShoppingBag.svg";
 import dotone from "../../static/icons/Duotone.svg";
 import couponDiscount from "../../static/icons/CouponDiscount.svg";

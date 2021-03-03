@@ -11,7 +11,7 @@ export const CardProductSquare = ({ img, price, className }) => {
       <div className="text-white flex flex-col pt-2.5">
         <p className="text-xs mb-1 truncate">Organizador de escritorios</p>
         <div className="flex justify-between items-center">
-          <span className="font-bold text-xl mb-1.5">{price}</span>
+          <span className="font-bold text-xl mb-1.5 font-heading">{price}</span>
           <span className="mb-2">
             <img src={heart} alt="heart icon" />
           </span>

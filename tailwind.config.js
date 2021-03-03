@@ -78,7 +78,7 @@ module.exports = {
       }
     },
     fontFamily: {
-      sans: ['Inter', 'sans-serif'],
+      sans: ['Inter', 'DM Sans', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
     },
     extend: {

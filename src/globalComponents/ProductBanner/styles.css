@@ -1,5 +1,5 @@
 .ProductBanner {
-  height: 168px;
+  min-height: 168px;
 }
 .ProductBanner__content {
   position: absolute;
@@ -12,7 +12,15 @@
 .ProductBanner__discount {
   max-width: 176px;
 }
-.ProductBanner__description {
+.ProductBanner__discount {
   position: absolute;
   bottom: 26px;
+}
+
+.ProductBanner__img {
+  position: absolute;
+  min-width: 152px;
+  right: 0;
+  bottom: -26px;
+  clip-path: inset(0px 0px 25px 0px);
 }

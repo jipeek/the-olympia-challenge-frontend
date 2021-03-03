@@ -1,0 +1,16 @@
+.PurchaseDetails {
+    border-bottom: 1px solid rgba(255, 255, 255, .05);
+}
+
+.PurchaseDetails--descount .PurchaseDetails__price {
+    color: #FF968E;
+}
+
+.PurchaseDetails--total .PurchaseDetails__text {
+    color: #ffffff;
+}
+
+.PurchaseDetails:last-child {
+    border-bottom: none;
+    padding-bottom: 0 !important;
+}

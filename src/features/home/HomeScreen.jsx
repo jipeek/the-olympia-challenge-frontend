@@ -51,6 +51,7 @@ const HomeScreen= () =>{
                     </div>
                 </div>
 
+
                 <div className="mb-4 items-center">
                     <span className="text-white text-lg font-bold font-heading">Últimos productos</span>
                 </div>

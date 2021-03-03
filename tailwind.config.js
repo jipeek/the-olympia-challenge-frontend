@@ -71,6 +71,11 @@ module.exports = {
         DEFAULT: '#FFFFFF',
         dark: '#FFFFFF'
       },
+      grey: {
+        light: '#3A3D46',
+        DEFAULT: '#3A3D46',
+        dark: '#3A3D46'
+      },
       colorplaceholder: {
         light: '#5E6272',
         DEFAULT: '#5E6272',
@@ -93,9 +98,11 @@ module.exports = {
         'costum': '12px',
       },
       fontSize: {
+        'superSmall': '10px',
         'small': '12px',
         'normal': '13px',
-        'regular': '14px'
+        'regular': '14px',
+        'medium': '16px'
       }
     },
   },

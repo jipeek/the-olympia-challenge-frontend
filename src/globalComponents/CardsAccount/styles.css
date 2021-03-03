@@ -1,0 +1,48 @@
+.CardsAccount {
+    min-width: 100px;
+    width: 100%;
+    max-width: 116px;
+    box-sizing: content-box;
+}
+
+.CardsAccount__figure {
+    position: relative;
+    max-width: 40px;
+    max-width: 40px;
+}
+
+.CardsAccount--bag .CardsAccount__figure {
+    background-color: #A06AF9;
+}
+
+.CardsAccount--bag .CardsAccount__figure::after {
+    content: url('../../static/icons/ShoppingsBag.svg');
+    display: block;
+}
+
+.CardsAccount--gift .CardsAccount__figure {
+    background-color: #8E96FF;
+}
+
+.CardsAccount--gift .CardsAccount__figure::after {
+    content: url('../../static/icons/PointsGift.svg');
+    display: block;
+}
+
+.CardsAccount--coupons .CardsAccount__figure {
+    background-color: #FF968E;
+}
+
+.CardsAccount--coupons .CardsAccount__figure::after {
+    content: url('../../static/icons/CouponsAccount.svg');
+    display: block;
+}
+
+.CardsAccount--favs .CardsAccount__figure {
+    background-color: #FBA3FF;
+}
+
+.CardsAccount--favs .CardsAccount__figure::after {
+    content: url('../../static/icons/HeartWhite.svg');
+    display: block;
+}

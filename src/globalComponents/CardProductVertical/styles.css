@@ -1,9 +1,8 @@
 .CardProductVertical {
-  min-width: 155px;
-  height: 248px;
+  min-width: 134px;
 }
 
 .CardProductVertical__image {
   width: 100%;
-  height: 135px;
+  min-height: 135px;
 }

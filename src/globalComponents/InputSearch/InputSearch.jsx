@@ -3,7 +3,7 @@ import search from "../../static/icons/Search.svg";
 
 const InputSearch = ( {placeholder} ) =>{
     return (
-        <form action="" className="mt-6">
+        <form action="" className="w-full mt-6">
             <div className="flex flex-row items-center justify-between w-full mb-4 relative h-15 rounded mb-6">
                 <div className="relative text-gray-600 focus-within:text-gray-400 w-full">
                     <span className="absolute inset-y-0 left-0 flex items-center pl-2">

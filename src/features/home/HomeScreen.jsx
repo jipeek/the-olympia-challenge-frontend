@@ -21,6 +21,7 @@ import img1 from "../../static/hdbeufb.svg";
 import ProductSummary from '../../globalComponents/ProductSummary/ProductSummary';
 
 
+
 const HomeScreen= () =>{
     const strings = HOME_SCREEN_es;
     const { buttonSearchPlaceholder, buttonTitle01, buttonTitle02 } = strings;
@@ -51,7 +52,6 @@ const HomeScreen= () =>{
                     </div>
                 </div>
 
-                
             </div>
 
 

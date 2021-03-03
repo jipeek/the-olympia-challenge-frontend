@@ -82,6 +82,9 @@ module.exports = {
       serif: ['Merriweather', 'serif'],
     },
     extend: {
+      screens: {
+        'xxs': '375px',
+      },
       spacing: {
         'regular': 'regular',
         'medium': '16px',
@@ -90,6 +93,8 @@ module.exports = {
         'costum': '12px',
       },
       fontSize: {
+        'small': '12px',
+        'normal': '13px',
         'regular': '14px'
       }
     },

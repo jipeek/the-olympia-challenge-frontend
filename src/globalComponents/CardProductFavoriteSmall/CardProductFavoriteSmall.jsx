@@ -1,6 +1,7 @@
 import React from 'react';
 import "./styles.css";
 import heartWhite from "../../static/icons/fi-sr-heart-white.svg";
+import ImgProfile from "../ImgProfile/ImgProfile";
 
 export const CardProductFavoriteSmall = ({ className, img, imgProfile }) => {
   return (
@@ -11,7 +12,7 @@ export const CardProductFavoriteSmall = ({ className, img, imgProfile }) => {
       <div className="CardProductFavoriteSmall__content py-4 px-3 rounded-xl">
         <div className="flex flex-row items-center h-7 justify-between">
           <span>
-            <img src={imgProfile} className="object-cover h-5 w-5 inline-block mr-2 rounded-full" alt="profile img" />
+            <ImgProfile imgProfile={imgProfile} className="h-5 w-5 inline-block mr-2"/>
             <span className="text-sm text-white">Marie Curie</span>
           </span>
           <span className="bg-background01 py-0.5 px-2.5 rounded-full flex justify-center">

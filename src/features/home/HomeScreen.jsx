@@ -21,6 +21,8 @@ import img1 from "../../static/hdbeufb.svg";
 import ProductSummary from '../../globalComponents/ProductSummary/ProductSummary';
 import LinkWithArrow from '../../globalComponents/LinkWithArrow/LinkWithArrow';
 
+import CheckList from '../../globalComponents/CheckList/CheckList';
+
 
 const HomeScreen= () =>{
     const strings = HOME_SCREEN_es;
@@ -51,7 +53,9 @@ const HomeScreen= () =>{
                         <CustomButton className="mr-6" icon={couponDiscount} title={buttonTitle02} />
                     </div>
                 </div>
-                
+                <CheckList text="Gamer"/>
+                <CheckList text="Mecera"/>
+                <CheckList text="Dude random"/>
 
 
             </div>

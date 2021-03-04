@@ -51,7 +51,6 @@ const HomeScreen= () =>{
                         <CustomButton className="mr-6" icon={couponDiscount} title={buttonTitle02} />
                     </div>
                 </div>
-                
 
 
             </div>

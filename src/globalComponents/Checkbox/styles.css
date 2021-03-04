@@ -1,0 +1,25 @@
+.Checkbox {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: 2px solid #262A34;
+    border-radius: 6px;
+}
+
+.Checkbox:focus {
+    border-color: #246BFD;
+    outline: none;
+    --tw-ring-offset-color: transparente;
+}
+
+/* ----------------------
+ Modificaciones
+ ------------------------ */
+
+.Checkbox.Checkbox--blueline {
+    border-color: #246BFD;
+}
+
+.Checkbox.Checkbox--circle {
+    border-radius: 50%;
+}

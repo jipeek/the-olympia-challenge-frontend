@@ -62,3 +62,14 @@
 /* body {
   background-color: #181A20;
 } */
+
+.Global-line {
+  position: absolute;
+  width: 88px;
+  height: 4px;
+  left: calc(50% - 88px/2 + 0.5px);
+  top: 8px;
+
+  background: #5E6272;
+  border-radius: 100px;
+}

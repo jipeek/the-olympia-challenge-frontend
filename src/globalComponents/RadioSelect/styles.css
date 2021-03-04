@@ -1,0 +1,8 @@
+.RadioSelect {
+    border-bottom:  1px solid #3A3D46;
+}
+
+.RadioSelect:last-child {
+    border-bottom: none;
+    padding-bottom: 0 !important;
+}

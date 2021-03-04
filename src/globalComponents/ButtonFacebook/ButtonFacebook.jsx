@@ -2,10 +2,6 @@ import "./styles.css";
 import React from 'react';
 import IconFacebook from "../../static/icons/IconFacebook.svg";
 
-/* 
- Para poner poner el botón con box-shadow usar: shadow-regular
- */
-
 const ButtonFacebook = ( { className, id, typeButton } ) => {
 
     return (

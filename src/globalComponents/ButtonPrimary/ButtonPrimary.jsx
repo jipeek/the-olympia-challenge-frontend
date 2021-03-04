@@ -7,7 +7,7 @@ import React from 'react';
 const ButtonPrimary = ( { className, id, typeButton, text } ) => {
 
     return (
-        <button className={`w-full text-center text-medium py-3 text-white bg-primary font-bold rounded-double ${className}`} type={typeButton} id={id}>{text}</button>
+        <button className={`w-full text-center text-medium py-3 text-white bg-primary font-bold rounded-double focus:outline-none focus:ring-transparent ${className}`} type={typeButton} id={id}>{text}</button>
     )
 }
 

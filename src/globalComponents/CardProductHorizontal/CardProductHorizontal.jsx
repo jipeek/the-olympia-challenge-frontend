@@ -11,7 +11,7 @@ const CardProductHorizontal = ({ img, alt, title, price, footer }) =>{
            <div className="CardProductHorizontal__info w-full flex flex-col justify-between py-4 px-2">
                <div className="CardProductHorizontal__top text-white xxs:mb-4">
                     <p className="CardProductHorizontal__title text-small mb-1.5 font-medium">{title}</p>
-                    <p className=" font-bold text-xl">{price}</p>
+                    <p className=" font-bold text-xl font-title">{price}</p>
                </div>
                <div className="CardProductHorizontal__bottom text-white flex flex-row justify-between">
                     <span className="text-normal font-medium">{footer}</span>

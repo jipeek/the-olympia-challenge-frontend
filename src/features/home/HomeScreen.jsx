@@ -33,8 +33,6 @@ import RadioSelect from '../../globalComponents/RadioSelect/RadioSelect';
 
 import VariationLink from '../../globalComponents/VariationLink/VariationLink';
 
-import BoxPurchase from '../../globalComponents/BoxPurchase/BoxPurchase';
-
 const HomeScreen= () =>{
     const strings = HOME_SCREEN_es;
     const { buttonSearchPlaceholder, buttonTitle01, buttonTitle02 } = strings;
@@ -113,7 +111,7 @@ const HomeScreen= () =>{
             </div>
 
             <div className="container mx-auto px-4">
-                <BoxPurchase img={img1} title="Organizador para escritorio x" urlDetails="#" urlTracking="#" />
+
                 <div className="OrderByModal relative bg-background02 rounded-double pt-10 px-5 pb-5 my-4">
                     <div className="Global-line"></div>
                     <div className="OrderByModal__content flex flex-col">

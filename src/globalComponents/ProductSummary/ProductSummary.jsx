@@ -4,7 +4,7 @@ import React from 'react';
 const ProductSummary = ( { img, alt, title, und, price } ) =>{
     return (
         <div className="ProductSummary flex flex-row pb-4.5">
-           <div className="ProductSummary__img flex justify-center align-center">
+           <div className="ProductSummary__img flex justify-center items-center">
                <img className="p-2" src={img} alt={alt}/>
            </div>
            <div className="ProductSummary__info w-full flex flex-col justify-between text-white py-4 px-2">

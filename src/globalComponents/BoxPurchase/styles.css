@@ -1,0 +1,12 @@
+.BoxPurchase__title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+
+.BoxPurchase__img {
+  min-width: 80px;
+  max-width: 93px;
+}

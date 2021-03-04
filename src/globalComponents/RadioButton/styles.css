@@ -1,0 +1,17 @@
+.RadioButton {
+    width: 24px;
+    height: 24px;
+    background-color: #262A34;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.RadioButton:focus, .RadioButton:active {
+    border-color: #246BFD;
+    outline: none;
+    --tw-ring-offset-color: transparente;
+}
+
+[type='radio']:checked {
+    background-size: 160% !important;
+}

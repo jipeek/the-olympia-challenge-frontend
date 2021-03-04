@@ -1,0 +1,11 @@
+.VariationLink {
+    border-bottom:  1px solid #3A3D46;
+}
+
+.VariationLink:hover {
+    background-color: rgba(255, 255, 255, .05);
+}
+
+.VariationLink:last-child {
+    border-bottom: none;
+}

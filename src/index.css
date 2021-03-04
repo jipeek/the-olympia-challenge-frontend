@@ -73,3 +73,15 @@
   background: #5E6272;
   border-radius: 100px;
 }
+
+select {
+  background-image: url('static/icons/SelectArrow.svg') !important;
+  background-size: .7em !important;
+  background-color: transparent;
+  color: #ffffff !important;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: 1px solid #5E6272;
+  width: 100%;
+}

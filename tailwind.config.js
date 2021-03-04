@@ -66,6 +66,11 @@ module.exports = {
         DEFAULT: '#FF968E',
         dark: '#FF968E'
       },
+      colorful08: {
+        light: '#200745',
+        DEFAULT: '#200745',
+        dark: '#200745'
+      },
       white: {
         light: '#FFFFFF',
         DEFAULT: '#FFFFFF',

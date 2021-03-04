@@ -12,3 +12,10 @@ export const HOME_SCREEN = {
 export const LOGIN = {
     buttonTitle : 'Comienza ahora'
 };
+export const  translations = {
+    locale: "en",
+    Home: {
+      "HELLO": "Helloworld!",
+      "buttonTitle" : 'Comienza ahora'
+    }
+  };

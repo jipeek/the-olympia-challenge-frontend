@@ -63,8 +63,7 @@ const HomeScreen= () =>{
                     </div>
                 </div>
 
-                <RadioSelect text="Peso Colombiano"  />
-                <RadioSelect text="Peso Méxicano" checked="checked"  />
+                
             </div>
 
 
@@ -112,6 +111,15 @@ const HomeScreen= () =>{
             </div>
 
             <div className="container mx-auto px-4">
+            <div className="OrderByModal relative bg-background02 rounded-double pt-10 px-5 pb-8">
+                    <div className="Global-line"></div>
+                    <div className="OrderByModal__content">
+                        <span className="text-white text-medium font-bold">Ordenar por</span>
+                        <RadioSelect text="Peso Colombiano"  />
+                        <RadioSelect text="Peso Méxicano" checked="checked"  /> 
+                        <RadioSelect text="Dolar Americano"  />
+                    </div>
+                </div>
                 <div className="flex flex-row justify-around ">
                     <TypeCards img={Visa} />
                     <TypeCards img={Mastercard} />

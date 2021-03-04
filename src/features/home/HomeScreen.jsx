@@ -29,9 +29,9 @@ import Amex from "../../static/cards/AmericaExpress.svg";
 import Pse from "../../static/cards/Pse.svg";
 import Efecty from "../../static/cards/Efecty.svg";
 
-
 import RadioSelect from '../../globalComponents/RadioSelect/RadioSelect';
 
+import VariationLink from '../../globalComponents/VariationLink/VariationLink';
 
 const HomeScreen= () =>{
     const strings = HOME_SCREEN_es;
@@ -111,7 +111,17 @@ const HomeScreen= () =>{
             </div>
 
             <div className="container mx-auto px-4">
-            <div className="OrderByModal relative bg-background02 rounded-double pt-10 px-5 pb-8">
+                <div className="OrderByModal relative bg-background02 rounded-double pt-10 px-5 pb-5 my-4">
+                    <div className="Global-line"></div>
+                    <div className="OrderByModal__content flex flex-col">
+                        <span className="text-white text-medium font-bold pb-1">Nombre variaciones</span>
+                        <VariationLink url="#" text="Peso Colombiano"  />
+                        <VariationLink url="#" text="Peso Méxicano" /> 
+                        <VariationLink url="#" text="Dolar Americano"  />
+                    </div>
+                </div>
+
+                <div className="OrderByModal relative bg-background02 rounded-double pt-10 px-5 pb-5 my-4">
                     <div className="Global-line"></div>
                     <div className="OrderByModal__content">
                         <span className="text-white text-medium font-bold">Ordenar por</span>
@@ -120,6 +130,7 @@ const HomeScreen= () =>{
                         <RadioSelect text="Dolar Americano"  />
                     </div>
                 </div>
+
                 <div className="flex flex-row justify-around ">
                     <TypeCards img={Visa} />
                     <TypeCards img={Mastercard} />

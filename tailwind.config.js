@@ -91,7 +91,7 @@ module.exports = {
         'xxs': '375px',
       },
       spacing: {
-        'regular': 'regular',
+        'regular': '12px',
         'medium': '16px',
       },
       borderRadius: {

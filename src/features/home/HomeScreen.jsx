@@ -30,6 +30,8 @@ import Pse from "../../static/cards/Pse.svg";
 import Efecty from "../../static/cards/Efecty.svg";
 
 
+import RadioSelect from '../../globalComponents/RadioSelect/RadioSelect';
+
 
 const HomeScreen= () =>{
     const strings = HOME_SCREEN_es;
@@ -61,6 +63,8 @@ const HomeScreen= () =>{
                     </div>
                 </div>
 
+                <RadioSelect text="Peso Colombiano"  />
+                <RadioSelect text="Peso Méxicano" checked="checked"  />
             </div>
 
 

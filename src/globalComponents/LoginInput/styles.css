@@ -1,0 +1,19 @@
+.LoginInput__input {
+    background-color: transparent;
+}
+
+.LoginInput__input:focus {
+    --tw-ring-color: transparent;
+}
+
+.LoginInput--psswd {
+    position: relative;
+}
+
+.LoginInput--psswd::after {
+    content: url('../../static/icons/LookPassword.svg');
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+}

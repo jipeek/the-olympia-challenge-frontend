@@ -19,6 +19,7 @@ import InputSearch from '../../globalComponents/InputSearch/InputSearch';
 // imports de ProductSummary, esto no va en HomeScreen. Solo está puesto temporalmente
 import img1 from "../../static/hdbeufb.svg";
 import ProductSummary from '../../globalComponents/ProductSummary/ProductSummary';
+import LinkWithArrow from '../../globalComponents/LinkWithArrow/LinkWithArrow';
 
 
 const HomeScreen= () =>{
@@ -50,6 +51,8 @@ const HomeScreen= () =>{
                         <CustomButton className="mr-6" icon={couponDiscount} title={buttonTitle02} />
                     </div>
                 </div>
+                
+
 
             </div>
 
@@ -101,6 +104,13 @@ const HomeScreen= () =>{
                 <span className="text-base text-white mb-4.5">Resumen de productos</span>
                 <ProductSummary img={img1} alt="hola" title="Protector de piel para escritorio" und="1 unidad" price="$49.900"  />
                 <ProductSummary img={img1} alt="hola" title="Protector de piel para escritorio" und="1 unidad" price="$49.900"  />
+            </div>
+
+            <div className="flex flex-col rounded bg-background02">
+                <LinkWithArrow text="Hello" />
+                <LinkWithArrow text="Hello 2" />
+                <LinkWithArrow text="Hello 4" />
+                <LinkWithArrow text="Hello eh?" />
             </div>
         </>
     )

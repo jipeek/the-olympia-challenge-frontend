@@ -90,6 +90,7 @@ module.exports = {
     fontFamily: {
       sans: ['Inter', 'DM Sans', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
+      title: ['DM Sans', 'sans-serif']
     },
     extend: {
       screens: {

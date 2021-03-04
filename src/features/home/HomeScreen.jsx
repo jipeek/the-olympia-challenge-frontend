@@ -21,6 +21,15 @@ import img1 from "../../static/hdbeufb.svg";
 import ProductSummary from '../../globalComponents/ProductSummary/ProductSummary';
 import LinkWithArrow from '../../globalComponents/LinkWithArrow/LinkWithArrow';
 
+// Opciones de método de pago
+import TypeCards from '../../globalComponents/TypeCards/TypeCards';
+import Visa from "../../static/cards/Visa.svg";
+import Mastercard from "../../static/cards/Mastercard.svg";
+import Amex from "../../static/cards/AmericaExpress.svg";
+import Pse from "../../static/cards/Pse.svg";
+import Efecty from "../../static/cards/Efecty.svg";
+
+
 
 const HomeScreen= () =>{
     const strings = HOME_SCREEN_es;
@@ -99,18 +108,30 @@ const HomeScreen= () =>{
                 </div>
             </div>
 
-            <div className="rounded-costum bg-background02 pt-4 pl-4 pr-2.5 pb-2.5">
-                <span className="text-base text-white mb-4.5">Resumen de productos</span>
-                <ProductSummary img={img1} alt="hola" title="Protector de piel para escritorio" und="1 unidad" price="$49.900"  />
-                <ProductSummary img={img1} alt="hola" title="Protector de piel para escritorio" und="1 unidad" price="$49.900"  />
+            <div className="container mx-auto px-4">
+                <div className="flex flex-row justify-around ">
+                    <TypeCards img={Visa} />
+                    <TypeCards img={Mastercard} />
+                    <TypeCards img={Amex} />
+                    <TypeCards img={Pse} />
+                    <TypeCards img={Efecty} />
+                </div>
+
+                <div className="rounded-costum bg-background02 pt-4 pl-4 pr-2.5 pb-2.5">
+                    <span className="text-base text-white mb-4.5">Resumen de productos</span>
+                    <ProductSummary img={img1} alt="hola" title="Protector de piel para escritorio" und="1 unidad" price="$49.900"  />
+                    <ProductSummary img={img1} alt="hola" title="Protector de piel para escritorio" und="1 unidad" price="$49.900"  />
+                </div>
+
+                <div className="flex flex-col rounded bg-background02">
+                    <LinkWithArrow text="Hello" />
+                    <LinkWithArrow text="Hello 2" />
+                    <LinkWithArrow text="Hello 4" />
+                    <LinkWithArrow text="Hello eh?" />
+                </div>
+
             </div>
 
-            <div className="flex flex-col rounded bg-background02">
-                <LinkWithArrow text="Hello" />
-                <LinkWithArrow text="Hello 2" />
-                <LinkWithArrow text="Hello 4" />
-                <LinkWithArrow text="Hello eh?" />
-            </div>
         </>
     )
 }

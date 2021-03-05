@@ -6,6 +6,7 @@ import MiniBoxCategory from '../../globalComponents/MiniBoxCategory/MiniBoxCateg
 import LinkWithArrow from '../../globalComponents/LinkWithArrow/LinkWithArrow';
 import HeaderNav from '../../globalComponents/HeaderNav/HeaderNav';
 import NavMenu from '../../globalComponents/NavMenu/NavMenu';
+import { Link } from 'react-router-dom';
 
 // Icons & Imgs
 import Computer from "../../static/categories/Computer.svg";
@@ -15,8 +16,6 @@ import Utilities from "../../static/categories/Utilities.svg";
 import Plant from "../../static/categories/Plant.svg";
 import Packs from "../../static/categories/Packs.svg";
 import Led from "../../static/categories/Led.svg";
-import NavMenu from '../../globalComponents/NavMenu/NavMenu';
-import { Link } from 'react-router-dom';
 
 const Categories = () =>{
     //const [questionData, setQuestionData] = useState([]);

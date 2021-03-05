@@ -59,6 +59,7 @@ const HomeScreen= () =>{
                         </Link>
 
                 </div>
+
                 <div className="h-40 w-full rounded-xl bg-gradient01 mb-6">
                 </div>
                 <div className="mb-6 flex overflow-auto">
@@ -168,13 +169,14 @@ const HomeScreen= () =>{
                     <TypeCards img={Efecty} />
                 </div>
 
-                <div className="rounded-costum bg-background02 pt-4 pl-4 pr-2.5 pb-2.5">
-                    <span className="text-base text-white mb-4.5">Resumen de productos</span>
-                    <ProductSummary img={img1} alt="hola" title="Protector de piel para escritorio" und="1 unidad" price="$49.900"  />
-                    <ProductSummary img={img1} alt="hola" title="Protector de piel para escritorio" und="1 unidad" price="$49.900"  />
+                    <div className="rounded-costum bg-background02 pt-4 pl-4 pr-2.5 pb-2.5">
+                        <span className="text-base text-white mb-4.5">Resumen de productos</span>
+                        <ProductSummary img={img1} alt="hola" title="Protector de piel para escritorio" und="1 unidad" price="$49.900"  />
+                        <ProductSummary img={img1} alt="hola" title="Protector de piel para escritorio" und="1 unidad" price="$49.900"  />
+                    </div>
                 </div>
             </div>
-            </div>
+        </div>
         </>
     )
 }

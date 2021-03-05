@@ -34,18 +34,24 @@ import VariationLink from '../../globalComponents/VariationLink/VariationLink';
 
 import NavMenu from '../../globalComponents/NavMenu/NavMenu';
 import EditImgProfile from '../../globalComponents/EditImgProfile/EditImgProfile';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 
 const HomeScreen= () =>{
     const strings = HOME_SCREEN_es;
     const { buttonSearchPlaceholder, buttonTitle01, buttonTitle02 } = strings;
 
+    const history = useHistory();
+
+    const handleNextPageSearch = () => {
+        history.push('/search');
+    }
+
     return (
         <>
             <div className="container mx-auto px-4">
                 <div className="flex flex-row items-center justify-between w-full mb-4 relative h-15 rounded mb-6">
-                    <InputSearch placeholder={buttonSearchPlaceholder} />
+                    <InputSearch placeholder={buttonSearchPlaceholder} onClick={handleNextPageSearch} />
                     <Link to="/cart" className="py-4 pl-4">
                         <img src={shoppingBag} alt="Shopping Bag" />
                     </Link>
@@ -115,7 +121,7 @@ const HomeScreen= () =>{
             </div>
 
             <div className="container mx-auto px-4">
-                <NavMenu activeView={'active'}/>
+                <NavMenu />
 
                 <div className="flex justify-center">
                     <EditImgProfile imgProfile="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg" />

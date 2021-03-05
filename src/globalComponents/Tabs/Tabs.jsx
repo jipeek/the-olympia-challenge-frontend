@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './styles.css';
 /**
  * Tabs Component
@@ -17,9 +17,9 @@ import './styles.css';
 const Tabs = ({ className, tabs = [], onChange }) => {
   const [activeTab, setActiveTab] = useState(0);
 
-  useEffect(() => {
-    onChange(activeTab);
-  }, [activeTab, onChange]);
+  // useEffect(() => {
+  //   onChange(activeTab);
+  // },[activeTab, onChange]);
 
   return (
     <div className={`block ${className}`}>

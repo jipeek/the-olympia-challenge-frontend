@@ -19,7 +19,6 @@ import InputSearch from '../../globalComponents/InputSearch/InputSearch';
 // imports de ProductSummary, esto no va en HomeScreen. Solo está puesto temporalmente
 import img1 from "../../static/hdbeufb.svg";
 import ProductSummary from '../../globalComponents/ProductSummary/ProductSummary';
-import LinkWithArrow from '../../globalComponents/LinkWithArrow/LinkWithArrow';
 
 // Opciones de método de pago
 import TypeCards from '../../globalComponents/TypeCards/TypeCards';
@@ -33,7 +32,7 @@ import RadioSelect from '../../globalComponents/RadioSelect/RadioSelect';
 
 import VariationLink from '../../globalComponents/VariationLink/VariationLink';
 
-
+import NavMenu from '../../globalComponents/NavMenu/NavMenu';
 import EditImgProfile from '../../globalComponents/EditImgProfile/EditImgProfile';
 import { Link } from 'react-router-dom';
 
@@ -116,6 +115,7 @@ const HomeScreen= () =>{
             </div>
 
             <div className="container mx-auto px-4">
+                <NavMenu activeView={'active'}/>
 
                 <div className="flex justify-center">
                     <EditImgProfile imgProfile="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg" />

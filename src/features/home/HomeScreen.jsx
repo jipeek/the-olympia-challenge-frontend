@@ -114,7 +114,6 @@ const HomeScreen= () =>{
 
             <div className="container mx-auto px-4">
                 <div className="flex justify-center">
-
                     <EditImgProfile imgProfile="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg" />
                 </div>
 

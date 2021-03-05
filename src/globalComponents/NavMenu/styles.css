@@ -1,0 +1,29 @@
+.NavMenu {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.NavMenu__icon {
+    box-sizing: content-box;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 24px;
+    height: 24px;
+}
+
+.NavMenu button.active {
+    position: relative;
+}
+
+.NavMenu button.active::after {
+    content: url('../../static/nav/selectForm.svg');
+    display: block;
+    position: absolute;
+    bottom: -120%;
+    transform: translateX(-15%);
+}

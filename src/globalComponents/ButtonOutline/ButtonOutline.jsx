@@ -1,3 +1,4 @@
+import './styles.css';
 import React from 'react';
 
 const ButtonOutline = ( { className, id, typeButton, text } ) => {

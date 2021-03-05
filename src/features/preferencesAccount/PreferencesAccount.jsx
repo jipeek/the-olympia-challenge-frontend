@@ -34,7 +34,7 @@ const PreferencesAccount = () =>{
                 </div>
                 <form action="" method="post">
                     <div className="flex flex-col pb-3.5">
-                        <span className="text-white font-title font-semibold text-2xl tracking-tight pb-2">Steve Calderon</span>
+                        <span className="text-white font-title font-semibold text-2xl tracking-tight pb-2">¿A qué te dedicas?</span>
                         <span className="text-colorplaceholder font-medium text-small">Podrás ver productos recomendados para que crees el espacio de trabajo perfecto según tus necesidades. O puedes hacerlo luego en <em className="not-italic text-white">Tu cuenta</em>.</span>
                     </div>
                     <CheckList text={"Programador"} nameInput="developer" checked="checked" />

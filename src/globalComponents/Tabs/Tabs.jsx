@@ -14,7 +14,7 @@ import './styles.css';
  * - **onChange**: function that returns actual number tab active
  * @param {{className, tabs, onChange}} props Component paramenters
  */
-export const Tabs = ({ className, tabs = [], onChange }) => {
+const Tabs = ({ className, tabs = [], onChange }) => {
   const [activeTab, setActiveTab] = useState(0);
 
   useEffect(() => {
@@ -40,3 +40,5 @@ export const Tabs = ({ className, tabs = [], onChange }) => {
     </div>
   )
 }
+
+export default Tabs;

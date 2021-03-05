@@ -154,14 +154,6 @@ const HomeScreen= () =>{
                     <ProductSummary img={img1} alt="hola" title="Protector de piel para escritorio" und="1 unidad" price="$49.900"  />
                     <ProductSummary img={img1} alt="hola" title="Protector de piel para escritorio" und="1 unidad" price="$49.900"  />
                 </div>
-
-                <div className="flex flex-col rounded bg-background02">
-                    <LinkWithArrow text="Hello" />
-                    <LinkWithArrow text="Hello 2" />
-                    <LinkWithArrow text="Hello 4" />
-                    <LinkWithArrow text="Hello eh?" />
-                </div>
-
             </div>
 
         </>

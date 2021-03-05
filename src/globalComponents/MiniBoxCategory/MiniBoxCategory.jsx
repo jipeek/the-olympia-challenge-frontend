@@ -1,5 +1,5 @@
-import React from 'react';
 import "./styles.css";
+import React from 'react';
 
 const MiniBoxCategory = ({ margin, className, img, nameCategory }) => {
   return (

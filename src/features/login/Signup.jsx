@@ -32,10 +32,10 @@ const Signup = () => {
   }
 
   return (
-    <div className="container mx-auto px-10 mt-3 mb-11">
+    <div className="container mx-auto px-10 mt-4 mb-12">
       <button className=""><img src={ArrowBack} alt="" /></button>
 
-      <TabsLinks className="mb-9" tabs={[
+      <TabsLinks className="mt-11 mb-9" tabs={[
         {
           name: 'Inicia Sesión',
           link: '/login'
@@ -48,7 +48,7 @@ const Signup = () => {
         defaultTab={1}
       />
 
-      <form action="" method="get" onSubmit={handleSubmit}>
+      <form action="" method="post" onSubmit={handleSubmit}>
         <LoginInput className="mb-6" labelName="Correo Electronico" typeInput="email" placeholder="user@gmail.com" />
         <LoginInput className="mb-6 LoginInput--psswd" labelName="Contraseña" typeInput="password" placeholder="Tu contraseña" />
         <LoginInput className="mb-6 LoginInput--psswd" labelName="Contraseña" typeInput="password" placeholder="Tu contraseña" />

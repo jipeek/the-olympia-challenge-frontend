@@ -1,0 +1,11 @@
+.MiniBoxCategory {
+    max-width: 100px;
+}
+
+.MiniBoxCategory__img {
+    height: 75px;
+}
+
+.MiniBoxCategory__img img {
+    max-width: 75px;
+}

@@ -20,7 +20,7 @@ export const CardProductFavoriteSmall = ({ className, img, imgProfile }) => {
             <span className="text-white text-sm">25</span>
           </span>
         </div>
-        <span className="CardProductFavoriteSmall__description text-white text-lg font-bold font-heading">Mi setup minimalista para trabajar</span>
+        <span className="CardProductFavoriteSmall__description font-title text-white text-lg font-bold font-heading">Mi setup minimalista para trabajar</span>
       </div>
     </div>
   )

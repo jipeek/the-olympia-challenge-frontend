@@ -33,6 +33,7 @@ import RadioSelect from '../../globalComponents/RadioSelect/RadioSelect';
 
 import VariationLink from '../../globalComponents/VariationLink/VariationLink';
 
+
 const HomeScreen= () =>{
     const strings = HOME_SCREEN_es;
     const { buttonSearchPlaceholder, buttonTitle01, buttonTitle02 } = strings;

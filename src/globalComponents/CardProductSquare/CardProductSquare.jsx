@@ -3,11 +3,11 @@ import "./styles.css";
 import heart from "../../static/icons/fi-sr-heart.svg";
 
 export const CardProductSquare = ({ img, price, className, questionData }) => {
-  console.log(questionData, 'questioDataCard');
-  [questionData].map((qData)=> { 
+  // console.log(questionData, 'questioDataCard');
+  // [questionData].map((qData)=> { 
   
-    console.log( qData, 'name');
-  });
+  //   console.log( qData, 'name');
+  // });
   return (
     <div className={`section-products__card ${className}`}>
       <div className="section-products__img bg-background03 rounded-xl flex justify-center items-center p-2">

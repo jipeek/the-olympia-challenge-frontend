@@ -9,16 +9,24 @@ import ImgProfile from '../../globalComponents/ImgProfile/ImgProfile';
 // Icons
 import ArrowBack from "../../static/icons/ArrowBack.svg";
 import DefaultProfile from "../../static/icons/DefaultProfile.svg";
+import { useHistory } from 'react-router';
 
 const PreferencesAccount = () =>{
     //const strings = LOGIN_es;
     //const buttonTitle = strings.buttonTitle;
+    const history = useHistory();
+    const handleNext = () => {
+        history.push('/account-likes')
+    }
     
+    const handleReturnPage = () => {
+        history.push('/signup')
+    }
     return (
         <>
             <div className="container mx-auto px-4 mt-3 mb-6">
                 <header className="flex justify-between items-center">
-                    <button className=""><img src={ArrowBack} alt=""/></button>
+                    <button className="" onClick={handleReturnPage} ><img src={ArrowBack} alt="" /></button>
                     <span className="text-white font-bold text-lg">Personaliza Jipeek</span>
                     <ImgProfile className="h-12 w-12" imgProfile={DefaultProfile} />
                 </header>
@@ -34,7 +42,7 @@ const PreferencesAccount = () =>{
                 </div>
                 <form action="" method="post">
                     <div className="flex flex-col pb-3.5">
-                        <span className="text-white font-title font-semibold text-2xl tracking-tight pb-2">Steve Calderon</span>
+                        <span className="text-white font-title font-semibold text-2xl tracking-tight pb-2">¿A qué te dedicas?</span>
                         <span className="text-colorplaceholder font-medium text-small">Podrás ver productos recomendados para que crees el espacio de trabajo perfecto según tus necesidades. O puedes hacerlo luego en <em className="not-italic text-white">Tu cuenta</em>.</span>
                     </div>
                     <CheckList text={"Programador"} nameInput="developer" checked="checked" />
@@ -44,7 +52,7 @@ const PreferencesAccount = () =>{
 
                     <div className="flex flex-row space-between pt-10">
                         <ButtonOutline className="ButtonOutline--noButton pr-24" text ={"Saltar"} />
-                        <ButtonPrimary className=" shadow-regular" text ={"Siguiente"}/>
+                        <ButtonPrimary className=" shadow-regular" text={"Siguiente"} onClick={handleNext} />
                     </div>
                 </form>
             </div>

@@ -35,6 +35,7 @@ import VariationLink from '../../globalComponents/VariationLink/VariationLink';
 
 
 import EditImgProfile from '../../globalComponents/EditImgProfile/EditImgProfile';
+import { Link } from 'react-router-dom';
 
 
 const HomeScreen= () =>{
@@ -46,9 +47,9 @@ const HomeScreen= () =>{
             <div className="container mx-auto px-4">
                 <div className="flex flex-row items-center justify-between w-full mb-4 relative h-15 rounded mb-6">
                     <InputSearch placeholder={buttonSearchPlaceholder} />
-                    <a href="/" className="py-4 pl-4">
+                    <Link to="/cart" className="py-4 pl-4">
                         <img src={shoppingBag} alt="Shopping Bag" />
-                    </a>
+                    </Link>
                 </div>
                 <div className="h-40 w-full rounded-xl bg-gradient01 mb-6">
                 </div>
@@ -154,14 +155,6 @@ const HomeScreen= () =>{
                     <ProductSummary img={img1} alt="hola" title="Protector de piel para escritorio" und="1 unidad" price="$49.900"  />
                     <ProductSummary img={img1} alt="hola" title="Protector de piel para escritorio" und="1 unidad" price="$49.900"  />
                 </div>
-
-                <div className="flex flex-col rounded bg-background02">
-                    <LinkWithArrow text="Hello" />
-                    <LinkWithArrow text="Hello 2" />
-                    <LinkWithArrow text="Hello 4" />
-                    <LinkWithArrow text="Hello eh?" />
-                </div>
-
             </div>
 
         </>

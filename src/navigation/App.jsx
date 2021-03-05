@@ -3,6 +3,7 @@ import { BrowserRouter, Switch,  Route, } from 'react-router-dom';
 
 import HomeScreen from '../features/home/HomeScreen';
 import Login from '../features/login/Login';
+import Signup from '../features/login/Signup';
 import OnboardingScreen from '../features/onboarding/OnboardingScreen';
 import PreferencesAccount from '../features/preferencesAccount/PreferencesAccount';
 import Accountlikes from '../features/Accountlikes/Accountlikes';
@@ -29,9 +30,8 @@ const App =  () =>  {
                 <Route exact path="/purchaseDetail" component={PurchaseDetailScreen}/>
                 <Route exact path="/trackpurchase" component={TrackPurchaseScreen}/>
                 <Route exact path="/home" component={HomeScreen}/>
-                <Route exact path="/language" component={languageScreen}/>
-
-                
+                <Route exact path="/language" component={languageScreen} />
+                <Route exact path="/signup" component={Signup} />
             </Switch>
         </BrowserRouter>
     )

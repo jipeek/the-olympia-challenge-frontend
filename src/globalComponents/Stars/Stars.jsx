@@ -22,7 +22,7 @@ import starLine from '../../static/icons/StarLine.svg';
  * - **className** [string]: add more css classes
  *
  */
-export const Stars = ({ onChange = () => { }, className }) => {
+export const Stars = ({ onChange = () => { }, step = false, className, disabled = false }) => {
   const [stars, setStars] = useState([
     {
       activate: false
@@ -40,14 +40,33 @@ export const Stars = ({ onChange = () => { }, className }) => {
       activate: false
     },
   ]);
-  const [currentStar, setCurrentStar] = useState(false)
+  const [currentStar, setCurrentStar] = useState(false);
+
+  useEffect(() => {
+    if (step !== false) {
+      const currentStar = step - 1;
+      const starsUpdated = stars.map((starAux, i) => {
+        if (i <= currentStar) {
+          starAux.activate = true;
+          return starAux;
+        } else {
+          starAux.activate = false;
+          return starAux;
+        }
+      });
+      setCurrentStar(currentStar);
+      setStars([...starsUpdated])
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentStar]);
 
   useEffect(() => {
     onChange(currentStar);
   }, [currentStar, onChange]);
 
   const handleClick = (stars, star) => {
-    const starUpdatedIndex = stars.indexOf(star);
+    if (disabled) return;
+    let starUpdatedIndex = stars.indexOf(star);
     const starsUpdated = stars.map((starAux, i) => {
       if (i <= starUpdatedIndex) {
         starAux.activate = true;
@@ -68,7 +87,7 @@ export const Stars = ({ onChange = () => { }, className }) => {
           <img
             src={star.activate === true ? starFull : starLine}
             onClick={() => handleClick(stars, star)}
-            className={`w-full cursor-pointer`}
+            className={`w-full ${disabled ? '' : 'cursor-pointer'}`}
             alt="Star Full"
             key={i}
           />

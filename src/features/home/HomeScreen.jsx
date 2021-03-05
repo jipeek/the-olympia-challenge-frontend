@@ -33,9 +33,6 @@ import RadioSelect from '../../globalComponents/RadioSelect/RadioSelect';
 
 import VariationLink from '../../globalComponents/VariationLink/VariationLink';
 
-import laptop from "../../static/plant.svg";
-
-import MiniBoxCategory from '../../globalComponents/MiniBoxCategory/MiniBoxCategory';
 
 const HomeScreen= () =>{
     const strings = HOME_SCREEN_es;
@@ -115,7 +112,7 @@ const HomeScreen= () =>{
             </div>
 
             <div className="container mx-auto px-4">
-                <MiniBoxCategory className="bg-colorful05" img={laptop} nameCategory="Plantas" />
+
                 <div className="OrderByModal relative bg-background02 rounded-double pt-10 px-5 pb-5 my-4">
                     <div className="Global-line"></div>
                     <div className="OrderByModal__content flex flex-col">

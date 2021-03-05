@@ -1,0 +1,29 @@
+.EditImgProfile {
+    width: 138px;
+    height: 138px;
+}
+
+.EditImgProfile__blue {
+    position: absolute;
+    background-color: #246BFD;
+    width: 138px;
+    height: 138px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .8;
+    border-radius: 50%;
+}
+
+.EditImgProfile__camera {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    z-index: 2;
+}
+
+.EditImgProfile__photo {
+    width: 138px;
+    height: 138px;
+}

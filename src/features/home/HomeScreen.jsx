@@ -33,6 +33,7 @@ import RadioSelect from '../../globalComponents/RadioSelect/RadioSelect';
 
 import VariationLink from '../../globalComponents/VariationLink/VariationLink';
 
+import EditImgProfile from '../../globalComponents/EditImgProfile/EditImgProfile';
 
 const HomeScreen= () =>{
     const strings = HOME_SCREEN_es;
@@ -112,7 +113,10 @@ const HomeScreen= () =>{
             </div>
 
             <div className="container mx-auto px-4">
+                <div className="flex justify-center">
 
+                    <EditImgProfile imgProfile="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg" />
+                </div>
 
                 <div className="OrderByModal relative bg-background02 rounded-double pt-10 px-5 pb-5 my-4">
                     <div className="Global-line"></div>

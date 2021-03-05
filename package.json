@@ -16,13 +16,17 @@
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.22.0",
+    "i18next": "^19.9.1",
+    "i18next-browser-languagedetector": "^6.0.1",
     "prettier": "^2.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-i18next": "^11.8.8",
     "react-responsive-carousel": "^3.2.12",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-step-progress-bar": "^1.0.3",
+    "react-translate": "^7.0.1",
     "web-vitals": "^1.1.0"
   },
   "scripts": {

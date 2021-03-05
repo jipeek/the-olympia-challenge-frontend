@@ -10,5 +10,14 @@ export const HOME_SCREEN = {
 };
 
 export const LOGIN = {
-    buttonTitle : 'Comienza ahora'
+  logIn:"Inicia Sesión",
+  emailHolder:"Correo Electrónico",
+  password:"Tú contraseña",
+  buttonTitle : "Comienza ahora",
+};
+
+export const LANGUAGE = {
+  TITLE : "Idioma",
+  EN: "Ingles",
+  ES: "Español"
 };

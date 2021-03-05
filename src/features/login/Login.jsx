@@ -25,7 +25,6 @@ const Login = () =>{
                 <LoginInput className="mb-6 LoginInput--psswd" labelName="Contraseña" typeInput="password" placeholder="Tu contraseña" />
                 <ButtonPrimary className="mb-6 shadow-regular" typeButton="submit" text="Inicia sesión" />
                 <a href="#" className="text-primary text-normal flex justify-center font-bold"><span className="text-center">¿Olvidaste tu contraseña?</span></a>
-
             </form>
         </div>
     )

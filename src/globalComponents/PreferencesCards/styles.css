@@ -12,13 +12,8 @@
 
 .PreferencesCards__check {
     position: absolute;
-    width: 24px;
-    height: 24px;
     bottom: 0px;
     right: 28px;
-    background-color: transparent;
-    border: 2px solid #246BFD !important;
-    border-radius: 50%;
 }
 
 .PreferencesCards__check:focus {

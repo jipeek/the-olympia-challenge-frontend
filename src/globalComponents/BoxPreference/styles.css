@@ -1,0 +1,11 @@
+.BoxPreference {
+    position: relative;
+    min-width: 140px;
+    max-width: 159px;
+}
+
+.BoxPreference__info {
+    position: absolute;
+    bottom: 15px;
+    left: 12px;
+}

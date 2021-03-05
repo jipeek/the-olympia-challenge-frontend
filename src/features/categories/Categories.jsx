@@ -60,20 +60,7 @@ const Categories = () =>{
                     <HeaderNav text={'Categorías'} />
                     <ul className="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row" role="tablist">
                     </ul>
-                   <div className="mt-9">
-                       <div className="flex justify-between flex-wrap">
-                          <a href={'/'}><BoxCategory margin="mb-5" className="bg-colorful01" img={Computer} nameCategory={'Computadores'} QuantityProducts={'29 productos'} /></a>
-                          <a href={'/'}><BoxCategory margin="mb-5" className="bg-colorful04" img={Snacks} nameCategory={'Snacks'} QuantityProducts={'29 productos'} /></a>
-                          <a href={'/'}><BoxCategory className="bg-colorful07" img={Laptop} nameCategory={'Laptops'} QuantityProducts={'29 productos'} /></a>
-                          <a href={'/'}><BoxCategory className="bg-colorful06" img={Utilities} nameCategory={'Insumos'} QuantityProducts={'29 productos'} /></a>
-                       </div>
-      
-                       <div className="flex mt-6 justify-between flex-nowrap">
-                        <a href={'/'}><MiniBoxCategory className="bg-colorful05" img={Plant} nameCategory={'Plantas'} /></a>
-                        <a href={'/'}><MiniBoxCategory className="bg-colorful02" img={Packs} nameCategory={'Combos'} /></a>
-                        <a href={'/'}><MiniBoxCategory className="bg-secondary" img={Led} nameCategory={'Luces'} /></a>
-                       </div>
-      
+
                        <div className="mt-9">
                           <div className="flex justify-between flex-wrap">
                               <a href={'/'}><BoxCategory margin="mb-5" className="bg-colorful01" img={Computer} nameCategory={'Computadores'} QuantityProducts={'29 productos'} /></a>
@@ -99,8 +86,7 @@ const Categories = () =>{
                           </div>
                       </div>
                 </div>
-            </div>
-        </div>  
+            </div>  
         </>
     )
 }

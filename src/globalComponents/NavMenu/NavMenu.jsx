@@ -8,7 +8,7 @@ import Categories from "../../static/nav/Categories.svg";
 import Notications from "../../static/nav/Notications.svg";
 import Burger from "../../static/nav/Burger.svg";
 import { Link, useHistory } from 'react-router-dom';
-
+ 
 /* 
  Para activar el triangulo morado usar la clase
  .active en button

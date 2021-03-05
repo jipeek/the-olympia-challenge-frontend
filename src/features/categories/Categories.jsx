@@ -14,6 +14,8 @@ import Utilities from "../../static/categories/Utilities.svg";
 import Plant from "../../static/categories/Plant.svg";
 import Packs from "../../static/categories/Packs.svg";
 import Led from "../../static/categories/Led.svg";
+import NavMenu from '../../globalComponents/NavMenu/NavMenu';
+import { Link } from 'react-router-dom';
 
 const Categories = () =>{
     //const [questionData, setQuestionData] = useState([]);
@@ -52,7 +54,9 @@ const Categories = () =>{
         <>
             <div className="container mx-auto px-4 mt-4 mb-6">
                 <header className="grid Header__grid items-center mr-7">
-                    <button className=""><img src={ArrowBack} alt="Icon back" /></button>
+                    <Link to='/home'>
+                        <img src={ArrowBack} alt="Icon back" />
+                    </Link>
                     <span className="ml-13 text-white font-bold text-lg text-center">Categorías</span>
                 </header>
                 <ul className="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row" role="tablist">
@@ -82,6 +86,7 @@ const Categories = () =>{
                     </div>
                 </div>
             </div>
+            <NavMenu />
         </>
     )
 }

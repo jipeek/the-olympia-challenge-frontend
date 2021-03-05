@@ -33,9 +33,6 @@ import RadioSelect from '../../globalComponents/RadioSelect/RadioSelect';
 
 import VariationLink from '../../globalComponents/VariationLink/VariationLink';
 
-import setup from "../../static/setup.svg";
-
-import SwipeCollections from '../../globalComponents/SwipeCollections/SwipeCollections';
 
 const HomeScreen= () =>{
     const strings = HOME_SCREEN_es;
@@ -115,7 +112,7 @@ const HomeScreen= () =>{
             </div>
 
             <div className="container mx-auto px-4">
-                <SwipeCollections img={setup} nameColletion="Mi setup minimalista para trabajar" votes="12" imgProfile={img} nameUser="Marie Curie" QuantityProducts="4 products" />
+
                 <div className="OrderByModal relative bg-background02 rounded-double pt-10 px-5 pb-5 my-4">
                     <div className="Global-line"></div>
                     <div className="OrderByModal__content flex flex-col">

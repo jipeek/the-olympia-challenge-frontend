@@ -3,12 +3,11 @@
 import React from 'react';
 import { useTranslation } from "react-i18next";
 import '../../translations/i18n';
-import LoginInput from '../../globalComponents/LoginInput/LoginInput';
 import  i18n  from '../../translations/i18n';
 
 // Components
 import ButtonPrimary from '../../globalComponents/ButtonPrimary/ButtonPrimary';
-// import Tabs from '../../globalComponents/Tabs/Tabs';
+import Tabs from '../../globalComponents/Tabs/Tabs';
 import LoginInput from '../../globalComponents/LoginInput/LoginInput';
 
 // Icons
@@ -27,7 +26,9 @@ const Login = () =>{
         <div className="container mx-auto px-10 mt-3 mb-11">
             <button className=""><img src={ArrowBack} alt=""/></button>
 
-            {/* <Tabs className="mb-9" tabs={['Inicia Sesión', 'Crear cuenta']} onChange={setActualTab} />` */}
+            <Tabs className="mb-9" tabs={['Inicia Sesión', 'Crear cuenta']} 
+            //onChange={setActualTab} 
+            />
 
             <form action="" method="get">
                 <LoginInput className="mb-6" labelName="Correo Electronico" typeInput="email" placeholder="user@gmail.com" />

@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.css';
-import check from '../../static/icons/check.svg';
+import  Check  from '../../static/icons/Check.svg';
 import "react-step-progress-bar/styles.css";
 import { ProgressBar, Step } from "react-step-progress-bar";
 
@@ -18,7 +18,7 @@ export const Steps = ({ numberSteps = 2, step = 1 }) => {
             {({ accomplished, _, index }) => (
               <div className={`Steps__icon relative bg-background01 rounded-full border-solid border-primary flex items-center justify-center ${accomplished ? 'Steps__border__active' : 'Steps__border__disabled'}`}>
                 <img
-                  src={check}
+                  src={Check}
                   className={accomplished ? `block` : `hidden`}
                   alt="icon"
                 />

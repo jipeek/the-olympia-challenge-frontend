@@ -1,0 +1,16 @@
+.OrderTrack__incompleted {
+  border-width: 3px;
+}
+
+.OrderTrack__line {
+  height: 65px;
+  width: 2px;
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  z-index: -1;
+}
+
+.OrderTrack__title {
+  /* max-width: 166px; */
+}

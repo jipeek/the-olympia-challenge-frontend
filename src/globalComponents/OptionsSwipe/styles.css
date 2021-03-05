@@ -1,0 +1,36 @@
+.OptionsSwipe {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.OptionsSwipe--buy {
+    border: 2px solid rgba(24, 26, 32, 0.85);
+    background-color: #246BFD;
+}
+
+.OptionsSwipe--buy img {
+    height: 24px;
+    width: 24px;
+}
+
+.OptionsSwipe.OptionsSwipe--heart {
+    width: 60px;
+    height: 60px;
+    border: 4px solid rgba(24, 26, 32, 0.85);
+    background-color: #C25FFF;
+}
+
+.OptionsSwipe--heart img {
+    height: 32px;
+    width: 32px;
+}
+
+.OptionsSwipe--close {
+    background-color: #262A34;
+}
+
+.OptionsSwipe--close img {
+    height: 15px;
+    width: 15px;
+}

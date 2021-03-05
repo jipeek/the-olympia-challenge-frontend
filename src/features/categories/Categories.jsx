@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
-import { GetCategories } from '../../api/service';
-import { CardProductSquare } from '../../globalComponents/CardProductSquare/CardProductSquare';
+import React from 'react';
+//import { GetCategories } from '../../api/service';
+//import { CardProductSquare } from '../../globalComponents/CardProductSquare/CardProductSquare';
 import BoxCategory from '../../globalComponents/BoxCategory/BoxCategory';
 import MiniBoxCategory from '../../globalComponents/MiniBoxCategory/MiniBoxCategory';
 import LinkWithArrow from '../../globalComponents/LinkWithArrow/LinkWithArrow';
@@ -16,8 +16,8 @@ import Packs from "../../static/categories/Packs.svg";
 import Led from "../../static/categories/Led.svg";
 
 const Categories = () =>{
-    const [questionData, setQuestionData] = useState([]);
-    const [loaded, setLoaded] = useState(false);
+    //const [questionData, setQuestionData] = useState([]);
+    //const [loaded, setLoaded] = useState(false);
     // const getCategoriesData = async  () => {
     //     GetCategories()
     //         .then((result) => {
@@ -32,15 +32,15 @@ const Categories = () =>{
     // getCategoriesData()
 
     
-    const getCategoriasData = async  () => {
-        let result = await GetCategories();
-        setQuestionData(result.results);
-        setLoaded(!loaded);
-    };
+    // const getCategoriasData = async  () => {
+    //     let result = await GetCategories();
+    //     setQuestionData(result.results);
+    //     setLoaded(!loaded);
+    // };
 
-    if(!loaded){
-        getCategoriasData();
-    }
+    // if(!loaded){
+    //     getCategoriasData();
+    // }
 
 // console.log(questionData, 'question');
 //     const faq = [questionData].map((qData)=> qData ? (

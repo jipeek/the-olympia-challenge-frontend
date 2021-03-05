@@ -16,11 +16,11 @@
     height: 24px;
 }
 
-.NavMenu button.active {
+.NavMenu a.active {
     position: relative;
 }
 
-.NavMenu button.active::after {
+.NavMenu a.active::after {
     content: url('../../static/nav/selectForm.svg');
     display: block;
     position: absolute;

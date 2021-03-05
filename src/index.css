@@ -85,7 +85,3 @@ select {
   border: 1px solid #5E6272;
   width: 100%;
 }
-
-.Header__grid {
-  grid-template-columns: 40px 1fr;
-}

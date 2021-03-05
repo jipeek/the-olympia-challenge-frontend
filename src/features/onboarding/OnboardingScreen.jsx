@@ -1,8 +1,11 @@
 import React  from 'react';
 import { Carousel } from 'react-responsive-carousel';
+import { useHistory } from 'react-router';
 import ButtonPrimary from '../../globalComponents/ButtonPrimary/ButtonPrimary';
 
 const OnboardingScreen = () =>{
+
+    const history = useHistory();
 
     return (
         <div>
@@ -26,7 +29,7 @@ const OnboardingScreen = () =>{
                 <p className="legend">Legend 3</p>
             </div>
         </Carousel>
-        <ButtonPrimary  text ={"Comienza ahora"}/>
+            <ButtonPrimary text={"Comienza ahora"} onClick={() => history.push('/login')} />
         <p>Terminos y condiciones</p>
 
     </div>

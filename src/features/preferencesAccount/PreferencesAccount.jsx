@@ -9,16 +9,24 @@ import ImgProfile from '../../globalComponents/ImgProfile/ImgProfile';
 // Icons
 import ArrowBack from "../../static/icons/ArrowBack.svg";
 import DefaultProfile from "../../static/icons/DefaultProfile.svg";
+import { useHistory } from 'react-router';
 
 const PreferencesAccount = () =>{
     //const strings = LOGIN_es;
     //const buttonTitle = strings.buttonTitle;
+    const history = useHistory();
+    const handleNext = () => {
+        history.push('/account-likes')
+    }
     
+    const handleReturnPage = () => {
+        history.push('/signup')
+    }
     return (
         <>
             <div className="container mx-auto px-4 mt-3 mb-6">
                 <header className="flex justify-between items-center">
-                    <button className=""><img src={ArrowBack} alt=""/></button>
+                    <button className="" onClick={handleReturnPage} ><img src={ArrowBack} alt="" /></button>
                     <span className="text-white font-bold text-lg">Personaliza Jipeek</span>
                     <ImgProfile className="h-12 w-12" imgProfile={DefaultProfile} />
                 </header>
@@ -44,7 +52,7 @@ const PreferencesAccount = () =>{
 
                     <div className="flex flex-row space-between pt-10">
                         <ButtonOutline className="ButtonOutline--noButton pr-24" text ={"Saltar"} />
-                        <ButtonPrimary className=" shadow-regular" text ={"Siguiente"}/>
+                        <ButtonPrimary className=" shadow-regular" text={"Siguiente"} onClick={handleNext} />
                     </div>
                 </form>
             </div>

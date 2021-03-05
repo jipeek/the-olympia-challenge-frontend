@@ -4,6 +4,7 @@ import { BrowserRouter, Switch,  Route, } from 'react-router-dom';
 import HomeScreen from '../features/home/HomeScreen';
 import Login from '../features/login/Login';
 import Signup from '../features/login/Signup';
+import SignupHobbies from '../features/Signup/SignupHobbies';
 import OnboardingScreen from '../features/onboarding/OnboardingScreen';
 import PreferencesAccount from '../features/preferencesAccount/PreferencesAccount';
 import Accountlikes from '../features/Accountlikes/Accountlikes';
@@ -14,6 +15,10 @@ import PurchaseScreen from '../features/purchase/PurchaseScreen';
 import PurchaseDetailScreen from '../features/purchase/PurchaseDetailScreen';
 import TrackPurchaseScreen from '../features/purchase/TrackPurchaseScreen';
 import languageScreen from '../features/language/LanguageScreen';
+import Cart from '../features/cart/Cart';
+import CheckoutAddress from '../features/checkoutAddress/CheckoutAddress';
+import CheckoutPayment from '../features/checkoutPayment/CheckoutPayment';
+import CheckoutConfirm from '../features/checkoutAddress/checkoutConfirm/CheckoutConfirm';
 
 const App =  () =>  {
     return (
@@ -21,7 +26,7 @@ const App =  () =>  {
             <Switch>
                 <Route exact path="/" component={OnboardingScreen}/>
                 <Route exact path="/login" component={Login}/>
-                <Route exact path="/preferences" component={PreferencesAccount}/>
+                <Route exact path="/login/preferences" component={PreferencesAccount} />
                 <Route exact path="/account-likes" component={Accountlikes}/>
                 <Route exact path="/categories" component={Categories}/>
                 <Route exact path="/account" component={AccountScreen}/>
@@ -32,6 +37,11 @@ const App =  () =>  {
                 <Route exact path="/home" component={HomeScreen}/>
                 <Route exact path="/language" component={languageScreen} />
                 <Route exact path="/signup" component={Signup} />
+                <Route exact path="/signup/hobbies" component={SignupHobbies} />
+                <Route exact path="/cart" component={Cart} />
+                <Route exact path="/checkout/address" component={CheckoutAddress} />
+                <Route exact path="/checkout/payment" component={CheckoutPayment} />
+                <Route exact path="/checkout/confirm" component={CheckoutConfirm} />
             </Switch>
         </BrowserRouter>
     )

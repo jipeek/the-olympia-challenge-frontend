@@ -21,18 +21,28 @@ import WithLight from "../../static/preferences/WithLight.svg";
 
 import {LOGIN as LOGIN_es} from '../../locales/es';
 import {LOGIN as LOGIN_en} from '../../locales/en';
+import { useHistory } from 'react-router';
 const Accountlikes = () =>{
     const { t } = useTranslation();
     console.log(t, 't');
     console.log(i18n, 'i18n');
     const lang = i18n.language === "en" ? LOGIN_en  :LOGIN_es;
     console.log(lang, 'lang');
+    const history = useHistory();
+
+    const handleReturnPage = () => {
+        history.push('/login/preferences');
+    }
+
+    const handleNextPage = () => {
+        history.push('/home');
+    }
 
     return (
         <>
             <div className="container mx-auto px-4 mt-3 mb-6">
                 <header className="flex justify-between items-center">
-                    <button className=""><img src={ArrowBack} alt=""/></button>
+                    <button className="" onClick={handleReturnPage}><img src={ArrowBack} alt="" /></button>
                     <span className="text-white font-bold text-lg">Personaliza Jipeek</span>
                     <ImgProfile className="h-12 w-12" imgProfile="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg" />
                 </header>
@@ -55,7 +65,7 @@ const Accountlikes = () =>{
 
                     <div className="flex flex-row space-between pt-12">
                         <ButtonOutline className="ButtonOutline--noButton pr-24" text ={"Saltar"} />
-                        <ButtonPrimary className=" shadow-regular" text ={"Siguiente"}/>
+                        <ButtonPrimary className=" shadow-regular" text={"Siguiente"} onClick={handleNextPage} />
                     </div>
                 </form>
             </div>

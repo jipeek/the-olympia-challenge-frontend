@@ -16,6 +16,13 @@ export const LOGIN = {
   buttonTitle : "Comienza ahora",
 };
 
+export const SIGNUP = {
+  logIn: "Crear tu cuenta",
+  emailHolder: "Correo Electrónico",
+  password: "Tú contraseña",
+  buttonTitle: "Crear tu cuenta",
+};
+
 export const LANGUAGE = {
   TITLE : "Idioma",
   EN: "Ingles",

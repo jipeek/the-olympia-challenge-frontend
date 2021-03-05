@@ -1,42 +1,30 @@
-import React  from 'react';
-import { TranslatorProvider, useTranslate } from "react-translate"
-
+import React from 'react';
+import { useTranslation } from "react-i18next";
+import '../../translations/i18n';
 import ButtonPrimary from '../../globalComponents/ButtonPrimary/ButtonPrimary';
 import ButtonFacebook from '../../globalComponents/ButtonFacebook/ButtonFacebook';
-
-// sport {LOGIN as LOGIN_en} from '../../locales/es';
 import LoginInput from '../../globalComponents/LoginInput/LoginInput';
-import {translations} from '../../locales/es';
+import  i18n  from '../../translations/i18n';
 
-const Login = (lang) =>{
-    //const strings =  lang === "es" ? LOGIN_es :LOGIN_en;
-    //const buttonTitle = strings.buttonTitle;
-    console.log('lang', lang);
-    // let translations = {
-    //     locale: "en",
-    //     Home: {
-    //       "HELLO": "Helloworld!"
-    //     }
-    //   };
-       
-      function Home() {
-        let t = useTranslate("Home");
-        return <h1> {t("HELLO")} </h1>
-      }
+import {LOGIN as LOGIN_es} from '../../locales/es';
+import {LOGIN as LOGIN_en} from '../../locales/en';
+const Login = () =>{
+  const { t } = useTranslation();
+ console.log(t, 't');
+ console.log(i18n, 'i18n');
+ const lang = i18n.language === "en" ? LOGIN_en  :LOGIN_es;
+ console.log(lang, 'lang');
     return (
-        <TranslatorProvider translations={translations}>
-            
+    
         <div>
             <h1>Inicia sesión </h1>
             <p>Correo Electrónico</p>
             <LoginInput/>
             <p>Tú Contraseña</p>
             <LoginInput/>
-            <ButtonPrimary  text ={"buttomTitle"}/>
+            <ButtonPrimary  text ={lang.buttonTitle}/>
             <ButtonFacebook />
-            <Home />
         </div>
-        </TranslatorProvider>
     )
 }
 

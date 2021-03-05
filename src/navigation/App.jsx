@@ -11,6 +11,7 @@ import Profile from '../features/account/Profile';
 import PurchaseScreen from '../features/purchase/PurchaseScreen';
 import PurchaseDetailScreen from '../features/purchase/PurchaseDetailScreen';
 import TrackPurchaseScreen from '../features/purchase/TrackPurchaseScreen';
+import languageScreen from '../features/language/LanguageScreen';
 
 const App =  () =>  {
     return (
@@ -26,6 +27,7 @@ const App =  () =>  {
                 <Route exact path="/purchaseDetail" component={PurchaseDetailScreen}/>
                 <Route exact path="/trackpurchase" component={TrackPurchaseScreen}/>
                 <Route exact path="/home" component={HomeScreen}/>
+                <Route exact path="/language" component={languageScreen}/>
 
                 
             </Switch>

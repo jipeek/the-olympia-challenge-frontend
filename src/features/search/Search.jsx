@@ -10,7 +10,7 @@ const Search = () => {
     <div className="container mx-auto px-4">
       <div className="flex flex-row items-center justify-between w-full relative h-15 rounded">
         <InputSearch placeholder="Buscar en Jippek" autoFocus={true} />
-        <Link to="/home" className="text-sm mx-2 text-colorplaceholder font-semibold" >
+        <Link to="/" className="text-sm mx-2 text-colorplaceholder font-semibold" >
           Cancelar
         </Link>
       </div>

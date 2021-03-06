@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import InputSearch from '../../globalComponents/InputSearch/InputSearch'
 import NavMenu from '../../globalComponents/NavMenu/NavMenu'
 
-import TacksSearch from '../../globalComponents/TacksSearch/TacksSearch';
+import TacksSearch from '../../globalComponents/TacksSearch/TacksSearch'
 
 const Search = () => {
   return (

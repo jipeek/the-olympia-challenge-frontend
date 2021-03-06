@@ -49,8 +49,8 @@ const Signup = () => {
       />
 
       <form action="" method="post" onSubmit={handleSubmit}>
+        <LoginInput className="mb-6" labelName="Nombre y apellido" typeInput="text" placeholder="John Christian" />
         <LoginInput className="mb-6" labelName="Correo Electronico" typeInput="email" placeholder="user@gmail.com" />
-        <LoginInput className="mb-6 LoginInput--psswd" labelName="Contraseña" typeInput="password" placeholder="Tu contraseña" />
         <LoginInput className="mb-6 LoginInput--psswd" labelName="Contraseña" typeInput="password" placeholder="Tu contraseña" />
         <ButtonPrimary className="mb-6 shadow-regular" typeButton="submit" text={lang.buttonTitle} />
         <a href="#" className="text-primary text-normal flex justify-center font-bold"><span className="text-center">¿Olvidaste tu contraseña?</span></a>

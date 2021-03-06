@@ -10,7 +10,7 @@ import img from "../../static/61mAKoAsBDL 1.svg";
 import shoppingBag from "../../static/icons/ShoppingBag.svg";
 import dotone from "../../static/icons/Duotone.svg";
 import couponDiscount from "../../static/icons/CouponDiscount.svg";
-import { CardProductVertical } from '../../globalComponents/CardProductVertical/CardProductVertical';
+import CardProductVertical from '../../globalComponents/CardProductVertical/CardProductVertical';
 import { CardProductSquare } from '../../globalComponents/CardProductSquare/CardProductSquare';
 import { CardProductFavoriteSmall } from '../../globalComponents/CardProductFavoriteSmall/CardProductFavoriteSmall';
 import { ProductBanner } from '../../globalComponents/ProductBanner/ProductBanner';
@@ -135,7 +135,6 @@ const HomeScreen= () =>{
                 </div>
 
                 <div className="container mx-auto px-4">
-
 
                 <div className="OrderByModal relative bg-background02 rounded-double pt-10 px-5 pb-5 my-4">
                     <div className="Global-line"></div>

@@ -1,4 +1,4 @@
-import React  from 'react';
+import React, { useState }  from 'react';
 
 import "./styles.css";
 
@@ -20,17 +20,38 @@ import InputSearch from '../../globalComponents/InputSearch/InputSearch';
 import NavMenu from '../../globalComponents/NavMenu/NavMenu';
 
 import { Link, useHistory } from 'react-router-dom';
+import { GetProducts } from '../../api/service';
 
 
 const HomeScreen= () =>{
     const strings = HOME_SCREEN_es;
     const { buttonSearchPlaceholder, buttonTitle01, buttonTitle02 } = strings;
-
+    const [products, setProducts] = useState();
+    const [loaded, setLoaded] = useState(false);
     const history = useHistory();
 
     const handleNextPageSearch = () => {
         history.push('/search');
     }
+    const getAllProducts = async () =>{
+        let data = await GetProducts()
+            setProducts(data)
+            setLoaded(!loaded);
+    }
+
+    if(!loaded){
+        getAllProducts()
+    }
+
+    let data = products.results;
+    console.log(data, 'data');
+    const verticalProduct = data?.map((qData)=>  (
+        <CardProductVertical className="mr-3" img={img} title={qData.name_en} price={qData.price} footer="Envío gratis" />      
+     ) );
+
+    const cardProductSquare = data?.map((qData)=>  (
+        <CardProductSquare className="mr-4" img={img} price={qData.price} />     
+     ) );
 
     return (
         <>
@@ -77,6 +98,8 @@ const HomeScreen= () =>{
                         <span className="text-white text-lg font-bold font-heading">Últimos productos</span>
                     </div>
                     <div className="flex overflow-auto mb-11 pl-4">
+                        {verticalProduct}
+                        {/* //eliminar mocks */}
                         <CardProductVertical className="mr-3" img={img} title="Protector de piel para escritorio" price="$49.900" footer="Envío gratis" />
                         <CardProductVertical className="mr-3" img={img} title="Protector de piel para escritorio" price="$49.900" footer="Envío gratis" />
                         <CardProductVertical className="mr-3" img={img} title="Protector de piel para escritorio" price="$49.900" footer="Envío gratis" />
@@ -94,6 +117,8 @@ const HomeScreen= () =>{
                 <div className="section-products w-full bg-background02 py-4 relative">
                     <p className="text-white mb-3.5 pl-4 font-heading">Productos en este post</p>
                     <div className="flex overflow-auto pl-4">
+                    {cardProductSquare}
+                         {/* //eliminar mocks */}
                         <CardProductSquare className="mr-4" img={img} price="$19.900" />
                         <CardProductSquare className="mr-4" img={img} price="$19.900" />
                         <CardProductSquare className="mr-4" img={img} price="$19.900" />

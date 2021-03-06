@@ -10,3 +10,13 @@ export const GetCategories = async () => {
         return {error: true};
     }
 };
+
+export const GetProducts = async () => {
+    try {
+        let result = await  axios.get(`https://api.jipeek.com/products/`);
+        console.log(result.data, 'data peticion');
+        return result.data;
+    } catch (e) {
+        return {error: true};
+    }
+};

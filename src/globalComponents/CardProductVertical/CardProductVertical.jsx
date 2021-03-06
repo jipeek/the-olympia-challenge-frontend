@@ -11,7 +11,7 @@ const CardProductVertical = ({ img, title, price, footer, className }) => {
       </div>
       <div className="text-white flex flex-col px-2.5 pt-2.5">
         <p className="text-xs mb-1">{title}</p>
-        <p className="font-bold text-xl mb-1.5 font-heading">{price}</p>
+        <p className="font-bold text-xl mb-1.5 font-heading">${price}</p>
       </div>
       <div className="text-white px-2.5 pb-2.5 flex justify-between">
         <span className="text-background03">{footer}</span>

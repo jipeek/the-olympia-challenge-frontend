@@ -1,7 +1,7 @@
 import React from 'react';
 import search from "../../static/icons/Search.svg";
 
-const InputSearch = ( {placeholder} ) =>{
+const InputSearch = ({ placeholder, onClick = () => { }, autoFocus = false }) => {
     return (
         <form action="" className="w-full mt-6">
             <div className="flex flex-row items-center justify-between w-full mb-4 relative h-15 rounded mb-6">
@@ -11,7 +11,7 @@ const InputSearch = ( {placeholder} ) =>{
                             <img src={search} alt="search icon" />
                         </button>
                     </span>
-                    <input type="search" name="q" className="py-3 text-white text-regular font-semibold w-full rounded-costum pl-10 focus:border-background02 focus:border-colorful01 bg-background02 w-full border-background02 placeholder-colorplaceholder" placeholder={placeholder} />
+                    <input onClick={onClick} type="search" name="q" className="py-3 text-white text-regular font-semibold w-full rounded-costum pl-10 focus:border-background02 focus:border-colorful01 bg-background02 w-full border-background02 placeholder-colorplaceholder" placeholder={placeholder} autoFocus={autoFocus} />
                 </div>
             </div>
         </form>

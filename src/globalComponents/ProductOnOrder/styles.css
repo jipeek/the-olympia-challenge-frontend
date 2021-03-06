@@ -1,0 +1,16 @@
+.ProductOnOrder__img {
+    min-width: 66px;
+    max-width: 60px;
+}
+  
+.ProductOnOrder__title {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    max-width: 200px;
+}
+
+.ProductOnOrder select {
+    padding-right: 2px;
+}

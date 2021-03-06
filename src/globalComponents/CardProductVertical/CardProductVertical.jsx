@@ -2,8 +2,7 @@ import "./styles.css";
 import React from 'react'
 import heart from "../../static/icons/fi-sr-heart.svg";
 
-export const CardProductVertical = ({ img, title, price, footer, className }) => {
-
+const CardProductVertical = ({ img, title, price, footer, className }) => {
 
   return (
     <div className={`CardProductVertical bg-background02 rounded-xl overflow-hidden ${className}`}>
@@ -23,3 +22,5 @@ export const CardProductVertical = ({ img, title, price, footer, className }) =>
     </div>
   )
 }
+
+export default CardProductVertical;

@@ -16,21 +16,6 @@ import { CardProductFavoriteSmall } from '../../globalComponents/CardProductFavo
 import { ProductBanner } from '../../globalComponents/ProductBanner/ProductBanner';
 import InputSearch from '../../globalComponents/InputSearch/InputSearch';
 
-// imports de ProductSummary, esto no va en HomeScreen. Solo está puesto temporalmente
-import img1 from "../../static/hdbeufb.svg";
-import ProductSummary from '../../globalComponents/ProductSummary/ProductSummary';
-
-// Opciones de método de pago
-import TypeCards from '../../globalComponents/TypeCards/TypeCards';
-import Visa from "../../static/cards/Visa.svg";
-import Mastercard from "../../static/cards/Mastercard.svg";
-import Amex from "../../static/cards/AmericaExpress.svg";
-import Pse from "../../static/cards/Pse.svg";
-import Efecty from "../../static/cards/Efecty.svg";
-
-import RadioSelect from '../../globalComponents/RadioSelect/RadioSelect';
-
-import VariationLink from '../../globalComponents/VariationLink/VariationLink';
 
 import NavMenu from '../../globalComponents/NavMenu/NavMenu';
 
@@ -62,6 +47,7 @@ const HomeScreen= () =>{
 
                 <div className="h-40 w-full rounded-xl bg-gradient01 mb-6">
                 </div>
+
                 <div className="mb-6 flex overflow-auto">
                     <div>
                         <CustomButton className="mr-6" icon={dotone} title={buttonTitle01} />
@@ -70,24 +56,19 @@ const HomeScreen= () =>{
                         <CustomButton className="mr-6" icon={couponDiscount} title={buttonTitle02} />
 
                     </div>
-                    <div className="h-40 w-full rounded-xl bg-gradient01 mb-6">
-                    </div>
-                    <div className="mb-6 flex overflow-auto">
-                        <div>
-                            <CustomButton className="mr-6" icon={dotone} title={buttonTitle01} />
-                        </div>
-                        <div>
-                            <CustomButton className="mr-6" icon={couponDiscount} title={buttonTitle02} />
-                        </div>
-                        <div>
-                            <CustomButton className="mr-6" icon={dotone} title={buttonTitle01} />
-                        </div>
-                        <div>
-                            <CustomButton className="mr-6" icon={couponDiscount} title={buttonTitle02} />
-                        </div>
-                    </div>
 
-                    
+                    <div>
+                        <CustomButton className="mr-6" icon={dotone} title={buttonTitle01} />
+                    </div>
+                    <div>
+                        <CustomButton className="mr-6" icon={couponDiscount} title={buttonTitle02} />
+                    </div>
+                    <div>
+                        <CustomButton className="mr-6" icon={dotone} title={buttonTitle01} />
+                    </div>
+                    <div>
+                        <CustomButton className="mr-6" icon={couponDiscount} title={buttonTitle02} />
+                    </div>
                 </div>
 
 
@@ -134,42 +115,6 @@ const HomeScreen= () =>{
                     </div>
                 </div>
 
-                <div className="container mx-auto px-4">
-
-                <div className="OrderByModal relative bg-background02 rounded-double pt-10 px-5 pb-5 my-4">
-                    <div className="Global-line"></div>
-                    <div className="OrderByModal__content flex flex-col">
-                        <span className="text-white text-medium font-bold pb-1">Nombre variaciones</span>
-                        <VariationLink url="#" text="Peso Colombiano"  />
-                        <VariationLink url="#" text="Peso Méxicano" /> 
-                        <VariationLink url="#" text="Dolar Americano"  />
-                    </div>
-                </div>
-
-                <div className="OrderByModal relative bg-background02 rounded-double pt-10 px-5 pb-5 my-4">
-                    <div className="Global-line"></div>
-                    <div className="OrderByModal__content">
-                        <span className="text-white text-medium font-bold">Ordenar por</span>
-                        <RadioSelect text="Peso Colombiano"  />
-                        <RadioSelect text="Peso Méxicano" checked="checked"  /> 
-                        <RadioSelect text="Dolar Americano"  />
-                    </div>
-                </div>
-
-                <div className="flex flex-row justify-around ">
-                    <TypeCards img={Visa} />
-                    <TypeCards img={Mastercard} />
-                    <TypeCards img={Amex} />
-                    <TypeCards img={Pse} />
-                    <TypeCards img={Efecty} />
-                </div>
-
-                    <div className="rounded-costum bg-background02 pt-4 pl-4 pr-2.5 pb-2.5">
-                        <span className="text-base text-white mb-4.5">Resumen de productos</span>
-                        <ProductSummary img={img1} alt="hola" title="Protector de piel para escritorio" und="1 unidad" price="$49.900"  />
-                        <ProductSummary img={img1} alt="hola" title="Protector de piel para escritorio" und="1 unidad" price="$49.900"  />
-                    </div>
-                </div>
             </div>
         </div>
         </>

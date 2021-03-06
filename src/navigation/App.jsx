@@ -37,7 +37,6 @@ const App =  () =>  {
                 <Route exact path="/account/notifications" component={AccountNotifications} />
                 <Route exact path="/profile" component={Profile}/>
                 <Route exact path="/purchases" component={PurchaseScreen}/>
-                <Route exact path="/purchaseDetail" component={PurchaseDetailScreen}/>
                 <Route exact path="/trackpurchase" component={TrackPurchaseScreen}/>
                 <Route exact path="/home" component={HomeScreen}/>
                 <Route exact path="/language" component={languageScreen} />

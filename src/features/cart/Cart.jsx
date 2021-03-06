@@ -37,7 +37,7 @@ const Cart = () => {
             </div>
           </form>
 
-          <div className="p-4">
+          <div className="p-4 mb-5">
             <span className="text-white text-lg font-bold font-title">Detalles del pago</span>
             <PurchaseDetails subject={'Subtotal productos'} detail={'$490.900'} />
             <PurchaseDetails subject={'Envío'} detail={'Gratis'} />

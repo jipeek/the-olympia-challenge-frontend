@@ -6,7 +6,7 @@ import Home from "../../static/nav/Home.svg";
 import Search from "../../static/nav/Search.svg";
 import Categories from "../../static/nav/Categories.svg";
 import Notications from "../../static/nav/Notications.svg";
-import Burger from "../../static/nav/Burger.svg";
+import Burger from "../../static/nav/burger.svg";
 import { Link, useHistory } from 'react-router-dom';
  
 /* 
@@ -21,7 +21,6 @@ const NavMenu = ({ className, activeView }) => {
   useEffect(() => {
     console.log(history.location.pathname);
     setCurrentPath(history.location.pathname);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

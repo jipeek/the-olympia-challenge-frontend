@@ -25,7 +25,7 @@ const NavMenu = ({ className, activeView }) => {
 
   return (
     <div className={`NavMenu pb-10 pt-4 px-12 bg-background01 flex flex-row justify-between ${className}`}>
-      <Link to="/home" className={`focus:outline-none focus:ring-transparent ${currentPath === '/home' ? 'active' : ''}`}>
+      <Link to="/" className={`focus:outline-none focus:ring-transparent ${currentPath === '/' ? 'active' : ''}`}>
         <img className="NavMenu__icon" src={Home} alt="home icon" />
       </Link>
       <Link to="/search" className={`focus:outline-none focus:ring-transparent ${currentPath === '/search' ? 'active' : ''} `}>

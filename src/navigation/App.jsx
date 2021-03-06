@@ -28,7 +28,7 @@ const App =  () =>  {
     return (
         <BrowserRouter>
             <Switch>
-                <Route exact path="/" component={OnboardingScreen}/>
+                <Route exact path="/start" component={OnboardingScreen}/>
                 <Route exact path="/login" component={Login}/>
                 <Route exact path="/login/preferences" component={PreferencesAccount} />
                 <Route exact path="/account-likes" component={Accountlikes}/>
@@ -38,7 +38,7 @@ const App =  () =>  {
                 <Route exact path="/profile" component={Profile}/>
                 <Route exact path="/purchases" component={PurchaseScreen}/>
                 <Route exact path="/trackpurchase" component={TrackPurchaseScreen}/>
-                <Route exact path="/home" component={HomeScreen}/>
+                <Route exact path="/" component={HomeScreen}/>
                 <Route exact path="/language" component={languageScreen} />
                 <Route exact path="/signup" component={Signup} />
                 <Route exact path="/signup/hobbies" component={SignupHobbies} />

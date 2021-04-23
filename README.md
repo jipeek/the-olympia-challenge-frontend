@@ -44,6 +44,7 @@ Los autores de este proyecto son:
 * **Lessly** - Desarrollo Frontend - [GitHub](https://github.com/lessly-zuniga)
 * **Alejandro Arias** - Desarrollo Frontend - [GitHub](https://github.com/Disble)
 * **Royer Guerrero** - DevOps - [GitHub](https://github.com/royerguerrero)
+* **Steve Calderon** - Diseñador UI/UX - [GitHub](https://www.behance.net/steveavador)
 
 ---
 ⌨️ con ❤️ por [Bikatti](https://github.com/bikatti) 😊

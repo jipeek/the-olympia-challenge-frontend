@@ -47,5 +47,5 @@ Los autores de este proyecto son:
 * **Steve Calderon** - Diseñador UI/UX - [GitHub](https://www.behance.net/steveavador)
 
 ---
-⌨️ con ❤️ por [Bikatti](https://github.com/bikatti) 😊
+⌨️ con ❤️ por [Jipeek Team](https://jipeek.com) 😊
 
